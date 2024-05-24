@@ -1,0 +1,128 @@
+ .navbar {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 10px 100px;
+     background-color: #333;
+     color: #fff;
+     position: relative;
+ }
+
+ .navbar-logo {
+     font-size: 1.5rem;
+     font-weight: bold;
+ }
+
+ .navbar-menu {
+     display: flex;
+     gap: 20px;
+
+ }
+
+ .navbar-menu a {
+     color: #fff;
+     text-decoration: none;
+     font-size: 1rem;
+ }
+
+ .navbar-menu a.active {
+     color: #f90;
+ }
+
+ .navbar-buttons {
+     display: flex;
+     gap: 10px;
+ }
+
+ .navbar-buttons button {
+     padding: 5px 10px;
+     font-size: 1rem;
+     border: none;
+     cursor: pointer;
+ }
+
+ .navbar-buttons button:first-of-type {
+     background-color: #555;
+     color: #fff;
+ }
+
+ .navbar-buttons button:last-of-type {
+     background-color: #f90;
+     color: #fff;
+ }
+
+ .navbar-hamburger {
+     display: none;
+     flex-direction: column;
+     gap: 5px;
+     cursor: pointer;
+ }
+
+ .navbar-hamburger .bar {
+     width: 25px;
+     height: 3px;
+     background-color: #fff;
+ }
+
+ /* Animation */
+ @keyframes slideDown {
+     from {
+         opacity: 0;
+         transform: translateY(-10px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ /* Responsive Design */
+ @media (max-width: 768px) {
+     .navbar {
+         flex-direction: column;
+         align-items: flex-start;
+         padding: 10px 20px;
+     }
+
+     .navbar-menu {
+         flex-direction: column;
+         width: 100%;
+         display: none;
+         animation: slideDown 0.5s ease-in-out;
+         /* Increase animation duration */
+     }
+
+     .navbar-menu.open {
+         display: flex;
+     }
+
+     .navbar-menu a {
+         padding: 10px 0;
+         width: 100%;
+         text-align: center;
+     }
+
+     .navbar-buttons {
+         flex-direction: column;
+         width: 100%;
+         display: none;
+         animation: slideDown 0.5s ease-in-out;
+         /* Increase animation duration */
+     }
+
+     .navbar-buttons button {
+         width: 100%;
+         margin: 5px 0;
+     }
+
+     .navbar-menu.open~.navbar-buttons {
+         display: flex;
+     }
+
+     .navbar-hamburger {
+         display: flex;
+         position: absolute;
+         right: 20px
+     }
+ }
