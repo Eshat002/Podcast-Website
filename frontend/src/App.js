@@ -6,13 +6,10 @@ import Nav from './Components/Navbar/Nav';
 
 function App() {
   return (
-
     <Router>
       <Nav />
       <Routes>
-
         <Route exact path="/" element={<LandingPage />} />
-
       </Routes>
 
     </Router >

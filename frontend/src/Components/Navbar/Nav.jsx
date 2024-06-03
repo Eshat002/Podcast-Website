@@ -12,7 +12,7 @@ const Nav = () => {
 
     return (
         <nav>
-            <div className="nav-container">
+            <div className="nav-container sticky-top">
                 <div className="logo-container">
                     <a href=""><img src="/logo.png" alt="logo" /></a>
                 </div>

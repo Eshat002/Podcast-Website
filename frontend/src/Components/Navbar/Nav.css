@@ -2,7 +2,8 @@ nav .nav-container {
     display: flex;
     justify-content: space-between;
     padding: 20px 100px;
-    background-color: #F7EDE8;
+
+
 }
 
 nav .nav-sec-btn {
@@ -31,5 +32,17 @@ nav .nav-primary-btn {
 nav .menu-container {
     display: flex;
     gap: 40px;
-    padding-left: 130px
+    padding-left: 160px;
+    padding-top: 10px
+}
+
+nav .nav-container .menu-container a {
+    text-decoration: none !important;
+    color: #000000;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+nav .nav-container .button-container {
+    padding-top: 10px
 }
