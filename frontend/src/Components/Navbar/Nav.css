@@ -44,5 +44,48 @@ nav .nav-container .menu-container a {
 }
 
 nav .nav-container .button-container {
-    padding-top: 10px
+    padding-top: 10px;
+    display: flex;
+}
+
+
+@media screen and (max-width:991px) {
+    nav .nav-container {
+        flex-direction: column;
+        padding: 20px 50px
+    }
+
+    nav .menu-container {
+        flex-direction: column;
+        justify-content: start !important;
+        padding-left: 0px;
+        gap: 30px;
+        margin-top: 15px
+    }
+
+    nav .nav-container .button-container {
+        flex-direction: column;
+        gap: 35px;
+        margin-top: 20px
+    }
+
+    nav .nav-primary-btn {
+        padding: 9px 20px;
+
+    }
+
+    nav .nav-container .logo-container img {
+        margin-left: -5px !important
+    }
+
+
+
+}
+
+
+@media screen and (max-width:500px) {
+    nav .nav-container {
+        padding: 20px 30px
+    }
+
 }

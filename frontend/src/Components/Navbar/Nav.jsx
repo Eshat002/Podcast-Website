@@ -32,8 +32,9 @@ const Nav = () => {
 
                 </div>
                 <div className="button-container">
-                    <a className='nav-sec-btn me-3'>RECENT EPISODES</a>
-                    <a className='nav-primary-btn'>SUBSCRIBE</a>
+                    <div className='order-lg-1 order-2'><a className='nav-sec-btn me-3'>RECENT EPISODES</a></div>
+                    <div className='order-lg-2 order-1'><a className='nav-primary-btn'>SUBSCRIBE</a></div>
+
                 </div>
             </div>
         </nav>
