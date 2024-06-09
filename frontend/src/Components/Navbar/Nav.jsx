@@ -2,13 +2,12 @@ import React from 'react'
 import './Nav.css'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import HamburgerIcon from '../SVG/HamburgerIcon/HamburgerIcon'
+import { RiMenu5Fill } from "react-icons/ri";
+
 
 const Nav = () => {
-    const [dropdownOpen, setDropdownOpen] = useState(true);
 
-    const toggleDropdown = () => {
-        setDropdownOpen(!dropdownOpen);
-    };
 
     return (
         <nav>
@@ -16,6 +15,7 @@ const Nav = () => {
                 <div className="logo-container">
                     <a href=""><img src="/logo.png" alt="logo" /></a>
                 </div>
+
                 <div className="menu-container">
                     <Link to=''>Episodes</Link>
                     <Link to=''>About</Link>
@@ -34,6 +34,10 @@ const Nav = () => {
                 <div className="button-container">
                     <div className='order-lg-1 order-2'><a className='nav-sec-btn me-3'>RECENT EPISODES</a></div>
                     <div className='order-lg-2 order-1'><a className='nav-primary-btn'>SUBSCRIBE</a></div>
+                </div>
+                <div className="hamburger-icon-container">
+                    {/* <HamburgerIcon /> */}
+                    <RiMenu5Fill size={25} color="#CD4631" />
 
                 </div>
             </div>

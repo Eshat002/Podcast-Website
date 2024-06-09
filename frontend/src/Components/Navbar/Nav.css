@@ -48,6 +48,12 @@ nav .nav-container .button-container {
     display: flex;
 }
 
+nav .nav-container .hamburger-icon-container {
+    position: absolute;
+    right: 25px !important;
+    top: 45px !important;
+    display: none;
+}
 
 @media screen and (max-width:991px) {
     nav .nav-container {
@@ -60,13 +66,18 @@ nav .nav-container .button-container {
         justify-content: start !important;
         padding-left: 0px;
         gap: 30px;
-        margin-top: 15px
+        margin-top: 15px;
+        position: relative;
+        left: -100% !important;
+
     }
 
     nav .nav-container .button-container {
         flex-direction: column;
         gap: 35px;
-        margin-top: 20px
+        margin-top: 20px;
+        position: relative;
+        left: -100% !important;
     }
 
     nav .nav-primary-btn {
@@ -78,7 +89,10 @@ nav .nav-container .button-container {
         margin-left: -5px !important
     }
 
-
+    nav .nav-container .hamburger-icon-container {
+        display: block;
+        cursor: pointer;
+    }
 
 }
 
