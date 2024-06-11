@@ -7,7 +7,10 @@ import { RiMenu5Fill } from "react-icons/ri";
 
 
 const Nav = () => {
-
+    const [isNavOpen, setIsNavOpen] = useState(false)
+    const handleToggle = () => {
+        setIsNavOpen(!isNavOpen)
+    }
 
     return (
         <nav>
@@ -16,7 +19,7 @@ const Nav = () => {
                     <a href=""><img src="/logo.png" alt="logo" /></a>
                 </div>
 
-                <div className="menu-container">
+                <div className={`menu-container ${isNavOpen ? 'open-nav' : ''}`}>
                     <Link to=''>Episodes</Link>
                     <Link to=''>About</Link>
                     <div className="dropdown">
@@ -31,15 +34,14 @@ const Nav = () => {
                     </div>
 
                 </div>
-                <div className="button-container">
+                <div className={`button-container ${isNavOpen ? 'open-nav' : ''}`}>
                     <div className='order-lg-1 order-2'><a className='nav-sec-btn me-3'>RECENT EPISODES</a></div>
                     <div className='order-lg-2 order-1'><a className='nav-primary-btn'>SUBSCRIBE</a></div>
                 </div>
-                <div className="hamburger-icon-container">
+                <button onClick={handleToggle} className="hamburger-icon-container">
                     {/* <HamburgerIcon /> */}
                     <RiMenu5Fill size={25} color="#CD4631" />
-
-                </div>
+                </button>
             </div>
         </nav>
     )

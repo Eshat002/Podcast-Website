@@ -2,6 +2,7 @@ nav .nav-container {
     display: flex;
     justify-content: space-between;
     padding: 20px 100px;
+    /* background-color: rgb(205, 70, 49); */
 
 
 }
@@ -32,8 +33,9 @@ nav .nav-primary-btn {
 nav .menu-container {
     display: flex;
     gap: 40px;
-    padding-left: 160px;
-    padding-top: 10px
+    padding-left: 165px;
+    padding-top: 20px;
+
 }
 
 nav .nav-container .menu-container a {
@@ -44,8 +46,8 @@ nav .nav-container .menu-container a {
 }
 
 nav .nav-container .button-container {
-    padding-top: 10px;
     display: flex;
+    padding-top: 20px;
 }
 
 nav .nav-container .hamburger-icon-container {
@@ -53,31 +55,49 @@ nav .nav-container .hamburger-icon-container {
     right: 25px !important;
     top: 45px !important;
     display: none;
+    background-color: transparent;
+    border: none
 }
 
+
+/* css media query */
 @media screen and (max-width:991px) {
     nav .nav-container {
         flex-direction: column;
-        padding: 20px 50px
+        padding: 20px 50px;
+
     }
 
     nav .menu-container {
+        display: flex !important;
         flex-direction: column;
         justify-content: start !important;
         padding-left: 0px;
         gap: 30px;
-        margin-top: 15px;
-        position: relative;
-        left: -100% !important;
-
+        margin-top: 90px;
+        position: absolute !important;
+        left: -100%;
+        transition: 0.2s ease-in;
+        width: 100%;
+        background-color: rgb(205, 70, 49);
+        z-index: 1000;
+        /* height: 100vh; */
+        /* padding-bottom: 40px */
     }
 
     nav .nav-container .button-container {
+        display: flex !important;
         flex-direction: column;
         gap: 35px;
-        margin-top: 20px;
-        position: relative;
-        left: -100% !important;
+        margin-top: 215px;
+        position: absolute;
+        left: -100%;
+        transition: 0.2s ease-in;
+        width: 100%;
+        padding-top: 60px;
+        background-color: rgb(205, 70, 49);
+        padding-bottom: 50px;
+        height: 100vh;
     }
 
     nav .nav-primary-btn {
@@ -91,7 +111,14 @@ nav .nav-container .hamburger-icon-container {
 
     nav .nav-container .hamburger-icon-container {
         display: block;
-        cursor: pointer;
+
+    }
+
+    .open-nav {
+        /* position: absolute !important; */
+        left: 0% !important;
+        padding-left: 50px !important;
+
     }
 
 }
@@ -100,6 +127,13 @@ nav .nav-container .hamburger-icon-container {
 @media screen and (max-width:500px) {
     nav .nav-container {
         padding: 20px 30px
+    }
+
+    .open-nav {
+        /* position: absolute !important; */
+        left: 0% !important;
+        padding-left: 30px !important;
+
     }
 
 }

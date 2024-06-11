@@ -1,6 +1,7 @@
 #hero .container-fluid {
     width: 100%;
     padding-bottom: 100px;
+    padding-top: 50px;
 }
 
 #hero-image-1 {
@@ -19,7 +20,7 @@
 #hero .headline-for-hero {
     color: #000000;
     font-weight: 700;
-    font-size: 96px;
+    font-size: 86px;
     margin-top: 50px
 }
 
@@ -29,4 +30,47 @@
     font-size: 16px;
     margin-top: 20px;
     margin-bottom: 50px;
+}
+
+
+/* css media query */
+@media screen and (max-width:991px) {
+    #hero .headline-for-hero {
+        font-size: 56px;
+    }
+
+    #hero .container-fluid {
+        padding-top: 0px;
+    }
+
+    #hero-image-2 {
+        width: 80px !important;
+        top: -150px;
+        right: 20px;
+        z-index: -9999 !important
+    }
+
+    #hero-image-1 {
+        width: 200px;
+        left: -20px;
+        z-index: -9999 !important
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    #hero-image-1 {
+        width: 100px;
+
+    }
+
+    #hero-image-2 {
+        width: 40px !important;
+        top: -280px;
+        right: 0px !important
+    }
+
+
+
+
 }
