@@ -1,0 +1,26 @@
+#latest-categories {
+    margin-bottom: 40px;
+
+
+}
+
+.x {
+    position: relative;
+}
+
+.category-name {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    text-align: center;
+    width: 100%;
+}
+
+#latest-categories .category-name {
+    color: #81ADC8;
+    font-weight: 700;
+    font-size: 25px;
+
+    /* margin-bottom: 50px;   */
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import './LandingPage.css'
 import Hero from './Hero/Hero'
+import Categories from './Categories/Categories'
 
 
 const LandingPage = () => {
@@ -12,6 +13,7 @@ const LandingPage = () => {
                 subHeadline='We cover all kinds of categories and a weekly special guest.'
 
             />
+            <Categories />
 
         </>
     )
