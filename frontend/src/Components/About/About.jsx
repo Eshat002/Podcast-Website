@@ -33,7 +33,7 @@ const About = () => {
         </div>
         <div className="row text-center main-image-container">
           <div className="col-lg-6">
-            <img src={ThoughtImage} alt="about-image" />
+            <img src={ThoughtImage} alt="thought" />
             <p className="text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
               ac ultrices odio.{" "}
@@ -56,7 +56,7 @@ const About = () => {
               width: "120px",
               height: "120px",
               position: "absolute",
-              bottom: "-100px",
+              bottom: "-160px",
             }}
             src={CurveBlackImage}
             alt="curve-black"

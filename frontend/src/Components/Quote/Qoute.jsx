@@ -1,6 +1,6 @@
 import React from "react";
 import "./Qoute.css";
-import Inverted from "../SVG/Inverted";
+import Inverted from "../SVG/Inverted/Inverted";
 import Avatar from "../../Img/avatar.png";
 import SpotifyIcon from "../../Img/spotify-icon.png";
 import StarBlackImage from "../../Img/StarBlack.png";
