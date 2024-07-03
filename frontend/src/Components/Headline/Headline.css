@@ -5,3 +5,13 @@
   text-align: center;
   line-height: 160%;
 }
+
+@media screen and (max-width: 500px) {
+  #headline h2 {
+    color: #000000;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    line-height: 130%;
+  }
+}

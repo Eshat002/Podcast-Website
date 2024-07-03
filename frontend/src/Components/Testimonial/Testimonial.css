@@ -2,3 +2,30 @@
   background-color: #edf3f7;
   padding: 100px 0px;
 }
+
+#testimonial .sparkle {
+  position: absolute;
+  left: 230px;
+  top: -90px;
+}
+
+/* css media query */
+
+@media screen and (max-width: 991px) {
+  #testimonial {
+    background-color: #edf3f7;
+    padding: 100px 20px;
+  }
+
+  #testimonial .sparkle {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #testimonial {
+    background-color: #edf3f7;
+    padding: 100px 10px;
+  }
+}

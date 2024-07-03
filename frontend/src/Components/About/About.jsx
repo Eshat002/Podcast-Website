@@ -5,6 +5,7 @@ import ThoughtImage from "../../Img/thoughts.png";
 import BulbImage from "../../Img/bulb.png";
 import CurveRedImage from "../../Img/curveRed.png";
 import CurveBlackImage from "../../Img/curveBlack.png";
+import Headline from "../Headline/Headline";
 
 const About = () => {
   return (
@@ -25,8 +26,11 @@ const About = () => {
         <div className="headline-container row">
           <div className="col-lg-2"></div>
           <div className="col-lg-8">
-            <h2 className="headline">
-              Talk. Listen. Get inspired by every minute of it.
+            <h2
+              style={{ marginTop: "100px" }}
+              className="headline-container mb-5"
+            >
+              <Headline Headline="Talk. Listen. Get inspired by every minute of it." />
             </h2>
           </div>
           <div className="col-lg-2"></div>

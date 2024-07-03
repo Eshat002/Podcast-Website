@@ -10,6 +10,7 @@ import SpotifyIcon from "../../Img/spotify-icon.png";
 import GPodImage from "../../Img/gPod.png";
 import Headline from "../Headline/Headline";
 import SubHeadline from "../SubHeadline/SubHeadline";
+import SparkeImage from "../../Img/Sparkle.png";
 
 const Testimonial = () => {
   const breakpoints = {
@@ -29,8 +30,11 @@ const Testimonial = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-1"></div>
-          <div className="col-lg-10 text-center">
-            <Headline Headline="What our listeners say" />
+          <div className="col-lg-10  text-center position-relative">
+            <img className="sparkle" src={SparkeImage} alt="sparkle" />
+            <div className="headline-container">
+              <Headline Headline="What our listeners say" />
+            </div>
             <div className="sub-headline-container mb-5">
               <SubHeadline SubHeadline="Their experience throughout every platform" />
             </div>
