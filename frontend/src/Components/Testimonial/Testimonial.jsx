@@ -26,7 +26,7 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="mb-5" id="testimonial">
+    <div id="testimonial">
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-1"></div>
