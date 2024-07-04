@@ -22,8 +22,17 @@ class Tag(models.Model):
         return self.name
 
 
+
+class Host(models.Model):
+    name = models.CharField(max_length=100)
+    host_image = models.ImageField(upload_to='host_image/')
+
+    def __str__(self):
+        return self.name
+
+
 class Episode(models.Model):
-    host = models.CharField(max_length=50, null= True)
+    hosts = models.ManyToManyField(Host, related_name='episodes', blank=False)
     title = models.CharField(max_length=255)
     description = models.TextField()
     cover_image = models.ImageField(upload_to='podcast_covers/')

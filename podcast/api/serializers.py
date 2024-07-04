@@ -1,18 +1,22 @@
 # serializers.py
 from rest_framework import serializers
-from podcast.models import Category, Episode, Tag
+from podcast.models import Category, Episode, Tag, Host
+
+
+
+class HostSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Host
+        fields = '__all__'
+
 
 class TagSerializer(serializers.ModelSerializer):
     class Meta:
         model = Tag
         fields = ['id', 'name']
 
-class EpisodeSerializer(serializers.ModelSerializer):
-    tags = TagSerializer(many=True)
 
-    class Meta:
-        model = Episode
-        fields = ['id', 'title', 'description', "cover_image", "audio_file" ,"category", "release_date", 'tags']  # Add all other fields you need
+   # Add all other fields you need
         
 class CategorySerializer(serializers.ModelSerializer):
     # latest_episode = serializers.SerializerMethodField()
@@ -24,3 +28,12 @@ class CategorySerializer(serializers.ModelSerializer):
     # def get_latest_episode(self, obj):
     #     latest_episode = obj.episode_set.order_by('-release_date').first()
     #     return EpisodeSerializer(latest_episode).data if latest_episode else None
+
+class EpisodeSerializer(serializers.ModelSerializer):
+    tags = TagSerializer(many=True)
+    hosts = HostSerializer(many=True)
+    category = CategorySerializer()
+
+    class Meta:
+        model = Episode
+        fields = ['id', 'title', 'description', "cover_image", "audio_file" ,"category", "release_date", 'tags','hosts']
