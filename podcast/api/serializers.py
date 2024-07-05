@@ -36,4 +36,4 @@ class EpisodeSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Episode
-        fields = ['id', 'title', 'description', "cover_image", "audio_file" ,"category", "release_date", 'tags','hosts']
+        fields = ['id', 'title', 'description', "cover_image", "category", "release_date", 'tags','hosts']

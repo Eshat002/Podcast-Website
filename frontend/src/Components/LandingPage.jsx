@@ -6,6 +6,7 @@ import Sponsor from "./Sponsor/Sponsor";
 import About from "./About/About";
 import Testimonial from "./Testimonial/Testimonial";
 import Feature from "./Feature/Feature";
+import Episodes from "./Episodes/Episodes";
 
 const LandingPage = () => {
   const headline = (
@@ -33,6 +34,9 @@ const LandingPage = () => {
       </div>
       <div className="features-container">
         <Feature />
+      </div>
+      <div className="episodes-container">
+        <Episodes />
       </div>
     </div>
   );
