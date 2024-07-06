@@ -2,24 +2,18 @@ import React, { useEffect, useState } from "react";
 import "./Categories.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import useImagePrefix from "../Shared/useImagePrefix";
+import useIsLocal from "../Shared/useIsLocal";
 
 const Categories = () => {
   const [categories, setCategories] = useState([]);
-  const [imagePrefix, setImagePrefix] = useState("");
+  const isLocal = useIsLocal();
+  const imagePrefix = useImagePrefix();
 
   useEffect(() => {
-    const isLocalhost =
-      window.location.hostname === "127.0.0.1" ||
-      window.location.hostname === "localhost";
-    const categoriesUrl = isLocalhost
+    const categoriesUrl = isLocal
       ? "http://127.0.0.1:8000/api/podcast/latest-categories/"
       : "http://renderdomain.com/api/podcast/latest-categories/";
-    const imagePrefixUrl = isLocalhost
-      ? "http://127.0.0.1:8000"
-      : "http://renderdomain.com/";
-
-    // Set state for categories URL and image prefix
-    setImagePrefix(imagePrefixUrl);
 
     // Fetch categories
     const fetchCategories = async () => {

@@ -3,10 +3,12 @@ import Headline from "../Headline/Headline";
 import SubHeadline from "../SubHeadline/SubHeadline";
 import React, { useState, useEffect, useCallback } from "react";
 import EpisodeCard from "../EpisodeCard/EpisodeCard";
+import useImagePrefix from "../Shared/useImagePrefix";
 
 const Episodes = () => {
   const [episodes, setEpisodes] = useState([]);
   const [error, setError] = useState(null);
+  const imagePrefix = useImagePrefix();
 
   useEffect(() => {
     const fetchEpisodes = async () => {
@@ -42,7 +44,12 @@ const Episodes = () => {
             <div className="row">
               {episodes.map((episode, index) => (
                 <div key={episode.id} className="col-lg-6">
-                  <EpisodeCard title={episode.title} epiNum={episode.id} />
+                  <EpisodeCard
+                    title={episode.title}
+                    epiNum={episode.id}
+                    img={`${imagePrefix}${episode.cover_image}`}
+                    des={episode.description}
+                  />
                 </div>
               ))}
             </div>

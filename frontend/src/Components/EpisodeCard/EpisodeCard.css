@@ -1,3 +1,19 @@
 #episode-card {
   background-color: #ffffff !important;
 }
+#episode-card .first-div {
+  display: flex;
+  justify-content: start !important;
+  text-align: start;
+}
+#episode-card .first-div .image-container {
+  width: 20%;
+}
+
+#episode-card .first-div .image-container img {
+  border-radius: 8px;
+  object-fit: cover;
+}
+#episode-card .first-div .detail-container {
+  width: 80%;
+}
