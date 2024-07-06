@@ -27,6 +27,11 @@ class Host(models.Model):
     name = models.CharField(max_length=100)
     host_image = models.ImageField(upload_to='host_image/')
 
+    class Meta:
+        ordering = ['-id']
+
+        
+
     def __str__(self):
         return self.name
 
@@ -41,6 +46,7 @@ class Episode(models.Model):
     release_date = models.DateTimeField(auto_now_add=True)
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
     tags = models.ManyToManyField(Tag, blank=True)
+    highlight= models.BooleanField(default=False)
 
  
     def __str__(self):

@@ -4,6 +4,7 @@ import SubHeadline from "../SubHeadline/SubHeadline";
 import React, { useState, useEffect, useCallback } from "react";
 import EpisodeCard from "../EpisodeCard/EpisodeCard";
 import useImagePrefix from "../Shared/useImagePrefix";
+import PrimaryBtn from "../PrimaryBtn/PrimaryBtn";
 
 const Episodes = () => {
   const [episodes, setEpisodes] = useState([]);
@@ -30,7 +31,7 @@ const Episodes = () => {
   }, []);
 
   return (
-    <div className="episodes">
+    <div id="episodes">
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-1"></div>
@@ -45,13 +46,19 @@ const Episodes = () => {
               {episodes.map((episode, index) => (
                 <div key={episode.id} className="col-lg-6">
                   <EpisodeCard
+                    highlight={episode.highlight}
                     title={episode.title}
                     epiNum={episode.id}
                     img={`${imagePrefix}${episode.cover_image}`}
                     des={episode.description}
+                    tags={episode.tags}
+                    hosts={episode.hosts}
                   />
                 </div>
               ))}
+            </div>
+            <div className="main-button-container">
+              <PrimaryBtn btnText="BROWSE ALL EPISODES" />
             </div>
           </div>
           <div className="col-lg-1"></div>
