@@ -7,6 +7,7 @@ import About from "./About/About";
 import Testimonial from "./Testimonial/Testimonial";
 import Feature from "./Feature/Feature";
 import Episodes from "./Episodes/Episodes";
+import Pricing from "./Pricing/Pricing";
 
 const LandingPage = () => {
   const headline = (
@@ -37,6 +38,9 @@ const LandingPage = () => {
       </div>
       <div className="episodes-container">
         <Episodes />
+      </div>
+      <div className="pricing-container">
+        <Pricing />
       </div>
     </div>
   );

@@ -1,0 +1,48 @@
+#pricing-card {
+  border: #4d4d4d solid 2px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 35px;
+}
+
+#pricing-card .title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 140%;
+  color: #000000;
+}
+
+#pricing-card .text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 160%;
+  color: #4d4d4d;
+}
+
+#pricing-card .price-container h5 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 140%;
+  color: #cd4631;
+  margin-bottom: -5px;
+  padding-bottom: 0;
+}
+
+#pricing-card .price-container span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 160%;
+  color: #4d4d4d;
+}
+
+#pricing-card .tag {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 160%;
+  color: #ffffff;
+  background-color: #cd4631;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
