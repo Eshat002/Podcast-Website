@@ -3,6 +3,7 @@ import "./Pricing.css";
 import Headline from "../Headline/Headline";
 import SubHeadline from "../SubHeadline/SubHeadline";
 import PricingCard from "../PricingCard/PricingCard";
+import PricingDetailCard from "../PricingDetailCard/PricingDetailCard";
 
 const Pricing = () => {
   return (
@@ -14,7 +15,10 @@ const Pricing = () => {
             <div className="headline-container">
               <Headline Headline="Become our sponsor" />
             </div>
-            <div className="sub-headline-container text-center">
+            <div
+              style={{ marginBottom: "79px" }}
+              className="sub-headline-container text-center"
+            >
               <SubHeadline SubHeadline="Get exclusive episodes, merch and more" />
             </div>
             <div className="row">
@@ -22,8 +26,13 @@ const Pricing = () => {
                 <div className="pricing-card-container">
                   <PricingCard title="Member" price={9.99} />
                 </div>
-                <div className="pricing-detail-container">
-                  pricing detail card
+                <div className="pricing-detail-container mt-4 mb-4">
+                  <PricingDetailCard
+                    text2="Exclusive Content"
+                    text3="5% Discount on Merch"
+                    text4="Join the Community"
+                    text5="Livestreaming Access"
+                  />
                 </div>
               </div>
               <div className="col-lg-4 family-col">
@@ -34,16 +43,29 @@ const Pricing = () => {
                     tag="MOST POPULAR"
                   />
                 </div>
-                <div className="pricing-detail-container">
-                  pricing detail card
+                <div className="pricing-detail-container mt-4 mb-4">
+                  <PricingDetailCard
+                    text1="Everything in Tier 1"
+                    text2="Exclusive Content"
+                    text3="5% Discount on Merch"
+                    text4="Join the Community"
+                    text5="Livestreaming Access"
+                    tag="MOST POPULAR"
+                  />
                 </div>
               </div>
               <div className="col-lg-4 official-col">
                 <div className="pricing-card-container">
                   <PricingCard title="Official" price={29.99} />
                 </div>
-                <div className="pricing-detail-container">
-                  pricing detail card
+                <div className="pricing-detail-container mt-4 mb-4">
+                  <PricingDetailCard
+                    text1="Everything in Tier 2"
+                    text2="Exclusive Content"
+                    text3="5% Discount on Merch"
+                    text4="Join the Community"
+                    text5="Livestreaming Access"
+                  />
                 </div>
               </div>
             </div>
