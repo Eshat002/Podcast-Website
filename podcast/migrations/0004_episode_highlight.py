@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('podcast', '0003_host_remove_episode_host_episode_hosts'),
+        ("podcast", "0003_host_remove_episode_host_episode_hosts"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='episode',
-            name='highlight',
+            model_name="episode",
+            name="highlight",
             field=models.BooleanField(default=False),
         ),
     ]

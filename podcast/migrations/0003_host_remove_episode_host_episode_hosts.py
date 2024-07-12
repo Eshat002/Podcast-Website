@@ -6,25 +6,33 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('podcast', '0002_category_image'),
+        ("podcast", "0002_category_image"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Host',
+            name="Host",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=100)),
-                ('host_image', models.ImageField(upload_to='host_image/')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=100)),
+                ("host_image", models.ImageField(upload_to="host_image/")),
             ],
         ),
         migrations.RemoveField(
-            model_name='episode',
-            name='host',
+            model_name="episode",
+            name="host",
         ),
         migrations.AddField(
-            model_name='episode',
-            name='hosts',
-            field=models.ManyToManyField(related_name='episodes', to='podcast.host'),
+            model_name="episode",
+            name="hosts",
+            field=models.ManyToManyField(related_name="episodes", to="podcast.host"),
         ),
     ]
