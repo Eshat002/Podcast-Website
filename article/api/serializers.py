@@ -17,8 +17,8 @@ class ArticleTagSerializer(serializers.ModelSerializer):
 class ArticleSerializer(serializers.ModelSerializer):
     tags = ArticleTagSerializer(many=True)
     category = ArticleCategorySerializer()
-    timestamp = serializers.DateTimeField(format="%d %B %Y")
+    timestamp = serializers.DateTimeField(format="%d %B, %Y")
 
     class Meta:
         model = Article
-        fields = ["id", "title", "content", "category", "tags", "timestamp"]
+        fields = ["id", "title", "content", "category", "tags", "timestamp", "image"]

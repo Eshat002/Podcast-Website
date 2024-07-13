@@ -8,6 +8,7 @@ import Testimonial from "./Testimonial/Testimonial";
 import Feature from "./Feature/Feature";
 import Episodes from "./Episodes/Episodes";
 import Pricing from "./Pricing/Pricing";
+import Article from "./Article/Article";
 
 const LandingPage = () => {
   const headline = (
@@ -41,6 +42,9 @@ const LandingPage = () => {
       </div>
       <div className="pricing-container">
         <Pricing />
+      </div>
+      <div className="article-container">
+        <Article />
       </div>
     </div>
   );

@@ -1,0 +1,50 @@
+#article-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  border: 2px solid #4d4d4d;
+  margin-bottom: 20px;
+}
+
+#article-card .category {
+  font-weight: 700;
+  font-size: 14px;
+  color: #4d4d4d;
+  line-height: 160%;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+#article-card .title {
+  font-weight: 700;
+  font-size: 36px;
+  color: #000000;
+  line-height: 140%;
+}
+
+#article-card .content {
+  font-weight: 500;
+  font-size: 14px;
+  color: #4d4d4d;
+  line-height: 160%;
+  border-bottom: #4d4d4d solid 1px;
+  padding-bottom: 20px;
+}
+
+#article-card .tags-container span {
+  font-weight: 500;
+  font-size: 12px;
+  color: #4d4d4d;
+  line-height: 160%;
+  border: 1.6px solid #4d4d4d;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+#article-card .date-container .date {
+  font-weight: 700;
+  font-size: 12px;
+  color: #4d4d4d;
+  line-height: 160%;
+}
