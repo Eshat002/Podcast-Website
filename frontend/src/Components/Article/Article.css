@@ -1,3 +1,9 @@
 #article {
   padding: 80px 10px;
 }
+
+@media screen and (max-width: 500px) {
+  #article {
+    padding: 80px 5px;
+  }
+}

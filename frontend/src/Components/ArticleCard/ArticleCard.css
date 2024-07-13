@@ -48,3 +48,16 @@
   color: #4d4d4d;
   line-height: 160%;
 }
+
+@media screen and (max-width: 500px) {
+  #article-card .category {
+    font-size: 12px;
+  }
+
+  #article-card .title {
+    font-weight: 700;
+    font-size: 30px;
+    color: #000000;
+    line-height: 140%;
+  }
+}
