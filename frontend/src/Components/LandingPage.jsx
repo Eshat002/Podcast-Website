@@ -9,6 +9,7 @@ import Feature from "./Feature/Feature";
 import Episodes from "./Episodes/Episodes";
 import Pricing from "./Pricing/Pricing";
 import Article from "./Article/Article";
+import CTA from "./CTA/CTA";
 
 const LandingPage = () => {
   const headline = (
@@ -45,6 +46,9 @@ const LandingPage = () => {
       </div>
       <div className="article-container">
         <Article />
+      </div>
+      <div className="cta-container">
+        <CTA />
       </div>
     </div>
   );
