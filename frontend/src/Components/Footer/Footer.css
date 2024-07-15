@@ -1,0 +1,110 @@
+footer {
+  background-color: #ffffff !important;
+  border-top: 1px solid #000000;
+}
+
+footer .container-fluid {
+  width: 85%;
+}
+
+footer .container-fluid .platform-container img:nth-of-type(1) {
+  width: 120px !important;
+}
+
+footer .container-fluid .platform-container img:nth-of-type(2) {
+  width: 70px !important;
+}
+
+footer .container-fluid .platform-container img:nth-of-type(3) {
+  width: 70px !important;
+}
+
+footer .footer-section-1 .first-col .text-container p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #4d4d4d;
+  line-height: 160%;
+  margin: 20px 0px;
+}
+
+footer .footer-section-1 .first-col .social-container {
+  display: flex;
+  gap: 20px;
+}
+footer .container-fluid ul {
+  padding: 0;
+  margin: 0;
+}
+
+footer .container-fluid ul li {
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  line-height: 160%;
+  margin-bottom: 15px;
+}
+
+footer .container-fluid ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+footer .footer-section-1 .last-col p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #4d4d4d;
+  line-height: 160%;
+}
+
+footer .footer-section-2 p,
+footer .footer-section-2 a {
+  font-weight: 500;
+  font-size: 12px;
+  color: #4d4d4d;
+  line-height: 160%;
+  margin-right: 10px;
+}
+
+footer .footer-section-2 a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+footer .footer-section-2 {
+  border-top: 0.6px solid #767575;
+  padding: 15px 0px 30px 0px;
+}
+
+footer .footer-section-1 {
+  padding: 80px 0px;
+}
+
+footer .footer-section-1 .last-col .platform-container {
+  margin-bottom: 40px !important;
+}
+
+@media screen and (max-width: 991px) {
+  footer .footer-section-2 {
+    padding: 10px 0px 20px 0px;
+  }
+
+  footer .footer-section-1 {
+    padding: 30px 0px;
+  }
+
+  footer .footer-section-1 .first-col {
+    margin-bottom: 30px !important;
+  }
+
+  footer .footer-section-1 .last-col .platform-container {
+    margin-bottom: 20px !important;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  footer .container-fluid {
+    width: 95%;
+  }
+}
